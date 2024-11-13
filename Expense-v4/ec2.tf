@@ -1,7 +1,7 @@
 resource "aws_instance" "main" {
   for_each =var.components
   ami           = "ami-0fcc78c828f981df2"
-  instance_type = each.value["instance_type"] == ".*" ? each.value["instance_type"] : "t2.micro"
+  instance_type = try (each.value["instance_type"], null ) == ".*" ? each.value["instance_type"] : "t2.micro"
   vpc_security_group_ids=["sg-057338d08bf482782"]
 
   tags = {
