@@ -12,15 +12,15 @@ resource "aws_instance" "main" {
 
 variable "components" {
   default = {
-    frontend ={
+    frontend = { 
       instance_type = "t2.micro"
       bu = "development"
     }
-    backend ={
+    backend = {
       instance_type = "t2.micro"
       bu = "development"
     }
-    mysql ={
+    mysql = {
       instance_type = "t2.micro"
       bu = "dba"
     }
