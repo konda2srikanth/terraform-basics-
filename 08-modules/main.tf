@@ -5,5 +5,8 @@ module "test" {
 
 variable "colours" {
     default = ["green","yellow"]
-  
+}
+
+output "dev" {
+  value = module.test.msg
 }
