@@ -25,3 +25,12 @@ variable "vpc_security_group_ids" {
 variable "zone_id" {
   default = "Z0973545UR1Y0F96H9F"
 }
+
+
+data "aws_security_group" "main" {
+  id = var.vpc_security_group_ids
+}
+
+output "sqid" {
+  value = data.aws_security_group.main.id
+}
