@@ -23,5 +23,5 @@ variable "vpc_security_group_ids" {
     default = ["sg-057338d08bf482782"]
 }
 variable "zone_id" {
-  default = ""
+  default = "Z0973545UR1Y0F96H9F"
 }
