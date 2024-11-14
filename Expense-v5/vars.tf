@@ -1,29 +1,13 @@
 variable "components" {
   default = {
-    frontend = { 
-      instance_type = "t2.micro"
-      bu = "development"
+    mysql = {
+      instance_type = "t2.small"
     }
     backend = {
-      instance_type = "t2.micro"
-      bu = "development"
+      instance_type = "t2.micro" # each.value
     }
-    mysql = {
-      instance_type = "t2.micro"
-      bu = "dba"
+    frontend = { # each.key
+      instance_type = "t2.small"
     }
   }
 }
-
-variable "ami" {
-    default = "ami-0fcc78c828f981df2"
-}
-
-# variable "vpc_security_group_ids" {
-#     default = ["sg-057338d08bf482782"]
-# }
-# variable "zone_id" {
-#   default = "Z0973545UR1Y0F96H9F"
-# }
-
-
