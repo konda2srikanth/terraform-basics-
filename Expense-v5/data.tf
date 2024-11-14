@@ -12,5 +12,5 @@ data "aws_security_group" "main" {
 }
 
 output "sqid" {
-  value = data.aws_security_group.main.
+  value = data.aws_security_group.main
 }
