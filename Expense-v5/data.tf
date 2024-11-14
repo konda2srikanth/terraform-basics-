@@ -6,7 +6,7 @@ data "aws_route53_zone" "main"{
 data "aws_security_group" "main" {
     filter {
       name = "group-name"
-      values = "default"
+      values = ["default"]
     }
   id = var.vpc_security_group_ids
 }
