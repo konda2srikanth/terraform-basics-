@@ -19,18 +19,11 @@ variable "ami" {
     default = "ami-0fcc78c828f981df2"
 }
 
-variable "vpc_security_group_ids" {
-    default = ["sg-057338d08bf482782"]
-}
-variable "zone_id" {
-  default = "Z0973545UR1Y0F96H9F"
-}
+# variable "vpc_security_group_ids" {
+#     default = ["sg-057338d08bf482782"]
+# }
+# variable "zone_id" {
+#   default = "Z0973545UR1Y0F96H9F"
+# }
 
 
-data "aws_security_group" "main" {
-  id = var.vpc_security_group_ids
-}
-
-output "sqid" {
-  value = data.aws_security_group.main.group-name
-}

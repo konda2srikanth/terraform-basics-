@@ -3,7 +3,14 @@ data "aws_route53_zone" "main"{
     private_zone = true
 }
 
-# output "zone_info" {
-#     value = data.aws_route53_zone.main
-  
-# }
+data "aws_security_group" "main" {
+    filter {
+      name = "groups-name"
+      values = "default"
+    }
+  id = var.vpc_security_group_ids
+}
+
+output "sqid" {
+  value = data.aws_security_group.main.
+}
