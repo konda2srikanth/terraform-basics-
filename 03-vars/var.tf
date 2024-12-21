@@ -30,5 +30,9 @@ variable "m" {
 
 output "my" {
     value = var.m
+}
+
+output "myi" {
+    value = "${var.m[Name]} and ${var.m[Contenent} and ${var.m[salary]}"
   
 }
