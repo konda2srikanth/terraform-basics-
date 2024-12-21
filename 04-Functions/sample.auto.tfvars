@@ -1,4 +1,4 @@
-fruits{
+fruits = {
     apple ={
         colour = "red"
         price = 100
