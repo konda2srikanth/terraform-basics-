@@ -20,8 +20,8 @@ output "sample_op" {
 
 variable "m" {
     default = [
-        Name = "mike" ,
-        Content = "DevOps" ,
+        Name = "mike",
+        Content = "DevOps",
         slary = 10000
     ]
   
