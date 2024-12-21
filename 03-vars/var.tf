@@ -35,3 +35,11 @@ output "my" {
 output "mmm" {
     value = " ${var.m["Name"]} and ${var.m["Content"]} and ${var.m["salary"]} "
 }
+
+variable "city" {
+  
+}
+output "op" {
+    value = var.city
+  
+}
