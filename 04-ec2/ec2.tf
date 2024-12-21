@@ -1,15 +1,24 @@
 resource "aws_instance" "main" {
-  count = length(var.components)
+  for_each = var.components
   ami           = "ami-0583d8c7a9c35822c"
-  instance_type = "t2.micro"
+  instance_type = each.value["instance_type"]
   vpc_security_group_ids=["sg-057338d08bf482782"]
 
   tags = {
-    Name = var.components[count.index]
+    Name = each.key
   }
 }
 
 variable "components" {
-  default = ["frontend","backend","database"]
+  default = {
+    frontend = {
+      instance_type = "t2.micro"
+    }
+        backend = {
+      instance_type = "t2.micro"
+    }
+        database = {
+      instance_type = "t2.micro"
+    }
   
 }
