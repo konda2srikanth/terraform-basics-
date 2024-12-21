@@ -11,7 +11,7 @@ variable "sample" {
     default = [
         100,
         "terraform"
-        true
+        
     ]
 }
 output "sample_op" {
