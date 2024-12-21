@@ -6,6 +6,7 @@ resource "aws_instance" "main" {
 
   tags = {
     Name = each.key
+    bu =each.value["bu"]
   }
 }
 
@@ -13,12 +14,15 @@ variable "components" {
   default = {
     frontend = {
       instance_type = "t2.micro"
+      bu = "Development"
     }
         backend = {
       instance_type = "t2.micro"
+      bu = "Development"
     }
         database = {
       instance_type = "t2.micro"
+      bu = "Development"
     }
   }
 }
