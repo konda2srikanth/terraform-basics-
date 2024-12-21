@@ -1,6 +1,5 @@
 variable "a" {
     default = 10
-  
 }
 
 output "op" {
@@ -28,18 +27,11 @@ variable "m" {
   
 }
 
-output "my" {
-    value = var.m
-}
-
 output "mmm" {
     value = " ${var.m["Name"]} and ${var.m["Content"]} and ${var.m["salary"]} "
 }
 
-variable "city" {
-  
-}
+variable "city" {}
 output "oxxx" {
     value = var.city
-  
 }
