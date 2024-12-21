@@ -39,7 +39,7 @@ output "mmm" {
 variable "city" {
   
 }
-output "op" {
+output "oxxx" {
     value = var.city
   
 }
