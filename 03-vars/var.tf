@@ -6,3 +6,16 @@ variable "a" {
 output "op" {
     value = var.a
 }
+
+variable "sample" {
+    default = [
+        100,
+        "terraform"
+        true
+    ]
+  
+}
+output "sample_op" {
+    value = var.sample
+  
+}
