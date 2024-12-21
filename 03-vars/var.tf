@@ -13,7 +13,6 @@ variable "sample" {
         "terraform"
         true
     ]
-  
 }
 output "sample_op" {
     value = var.sample
