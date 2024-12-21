@@ -5,6 +5,6 @@ resource "aws_instance" "main" {
   vpc_security_group_ids=["sg-057338d08bf482782"]
 
   tags = {
-    Name = "Frontend-${count.index}+1"
+    Name = "Frontend-${count.index + 1}"
   }
 }
