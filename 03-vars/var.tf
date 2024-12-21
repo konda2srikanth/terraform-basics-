@@ -33,5 +33,5 @@ output "my" {
 }
 
 output "mmm" {
-    value = " ${var.m[Name]} and ${var.m[Content]} and ${var.m[salary]} "
+    value = " ${var.m["Name"]} and ${var.m["Content"]} and ${var.m["salary"]} "
 }
