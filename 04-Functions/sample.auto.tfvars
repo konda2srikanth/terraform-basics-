@@ -1,10 +1,10 @@
 fruits = {
-    apple ={
+    apple = {
         colour = "red"
         price = 100
         metric = "kg"
     }
-    grapes{
+    grapes {
         colour = "black"
         price = 120
         metric = "kg"
