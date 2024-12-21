@@ -20,5 +20,5 @@ variable "components" {
         database = {
       instance_type = "t2.micro"
     }
-  
+  }
 }
