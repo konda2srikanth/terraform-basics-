@@ -15,6 +15,6 @@ variable "sample" {
     ]
 }
 output "sample_op" {
-    value = var.sample[0][1]
+    value = var.sample[0] and var.sample[1]
   
 }
