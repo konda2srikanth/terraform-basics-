@@ -7,7 +7,7 @@ module "app" {
   name                   = each.key
   vpc_security_group_ids = var.vpc_security_group_ids
   # vpc_security_group_ids = [data.aws_security_group.main.id]
-  # zone_id                = var.zone_id
+  zone_id                = var.zone_id
   # pwd                    = var.pwd
 }
 
