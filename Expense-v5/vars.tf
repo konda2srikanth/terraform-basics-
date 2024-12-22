@@ -12,11 +12,11 @@ variable "components" {
   }
 }
 variable "ami" {
-  value = "ami-0583d8c7a9c35822c"
+  default = "ami-0583d8c7a9c35822c"
   
 }
 
 variable "vpc_security_group_ids" {
-  value = "sg-057338d08bf482782"
+  default = "sg-057338d08bf482782"
   
 }
